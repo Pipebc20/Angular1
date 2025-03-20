@@ -1,0 +1,14 @@
+<form>
+  <input [(ngModel)]="valor1" type="number" placeholder="Valor 1" name="valor1">
+  <input [(ngModel)]="valor2" type="number" placeholder="Valor 2" name="valor2">
+  <button type="button" (click)="operar('sumar')">Sumar</button>
+  <button type="button" (click)="operar('restar')">Restar</button>
+  <button type="button" (click)="operar('multiplicar')">Multiplicar</button>
+  <button type="button" (click)="operar('dividir')">Dividir</button>
+</form>
+<div>
+  <p>Resultado: {{ resultado }}</p>
+  <p>{{ error }}</p>
+</div>
+
+<router-outlet/>
